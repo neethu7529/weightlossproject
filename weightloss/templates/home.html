@@ -1,0 +1,40 @@
+{% extends 'layout/app-layout.html'%}
+
+{% block title %}
+<h1>Your Journey to Better Health</h1>
+{% endblock %}
+
+
+{% block 'content' %}
+<!-- Hero Section -->
+<header class="hero-section text-center bg-dark text-white py-5">
+    <div class="container">
+        <h1 class="display-4">Track Your Weight Effortlessly</h1>
+        <p class="lead">Your partner in achieving a balanced, healthier lifestyle.</p>
+        
+    </div>
+</header>
+
+<!-- Features Section -->
+<section class="features-section bg-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <i class="fas fa-weight fa-3x mb-3 text-success"></i>
+                <h3>Smart Weight Tracking</h3>
+                <p>Log your weight with ease and visualize progress on detailed charts.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fas fa-leaf fa-3x mb-3 text-success"></i>
+                <h3>Wellness Insights</h3>
+                <p>Get actionable insights to enhance your overall well-being and stay motivated.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <i class="fas fa-hands-helping fa-3x mb-3 text-success"></i>
+                <h3>Engaged Community</h3>
+                <p>Connect with like-minded individuals to share tips, experiences, and encouragement.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

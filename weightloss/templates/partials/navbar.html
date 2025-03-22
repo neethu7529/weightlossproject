@@ -1,0 +1,16 @@
+<nav>
+    <a href="{% url 'home' %}">Home</a>
+    {% if user.is_authenticated %}
+   
+    <a href="{% url 'about-us' %}">About Us</a>
+    <a href="{% url 'addWeight' %}">Add Your Weight</a>
+    <a href="{% url 'addedWeight' %}">Details</a>
+    <a href="{% url 'weight_list' %}">Recent Weights</a>
+    <a href="{% url 'weight_loss_calculator' %}">Calculate Weight Loss</a>
+    <a href="{% url 'logout' %}" >LogOut</a>
+    {% else %}
+    <a href="{% url 'signup' %}">SignUp</a>
+    <a href="{% url 'login' %}">Login</a>
+    {% endif %}
+  
+</nav>
